@@ -221,24 +221,25 @@ add_action( 'wp_enqueue_scripts', 'sth_theme_js' );
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+require get_template_directory() . '/lib/template-tags.php';
+require get_template_directory() . '/lib/sth_breadcrumbs.php';
 
 /**
  * Bootstrap Walker and Nav Customization 
  */
-require get_template_directory() . '/inc/bootstrap_nav.php';
+require get_template_directory() . '/lib/bootstrap_nav.php';
 
 /**
  * Custom functions that act independently of the theme templates.
  */
-require get_template_directory() . '/inc/extras.php';
+require get_template_directory() . '/lib/extras.php';
 
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/lib/customizer.php';
 
 /**
  * Load Jetpack compatibility file.
  */
-require get_template_directory() . '/inc/jetpack.php';
+require get_template_directory() . '/lib/jetpack.php';
