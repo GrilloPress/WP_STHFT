@@ -1,0 +1,43 @@
+.page-feature-block {
+  
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  
+}
+
+.front-page-featured-reasons {
+  
+  margin-top: 2em;
+  margin-bottom: 4em;
+  
+  .media {
+    
+    padding: 2em 0;
+    
+  }
+  
+}
+
+.front-page-sponsors {
+  
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  
+  h2 {
+    
+    margin-bottom: 2em;
+    
+  }
+  
+}
+
+.navbar-brand {
+  
+  @media screen and (max-width: 383px) {
+    
+    font-size: 13px;
+    
+  }
+}

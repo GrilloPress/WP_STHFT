@@ -1,0 +1,14 @@
+/*
+Theme Name: NOEconf2017
+Theme URI: https://github.com/GrilloPress/NOEconf2017
+Description: WordPress theme for North of England Breech Birth Conference 2017
+Version: 0.1
+Author: Andrew Duckworth
+Author URI: https://github.com/GrilloPress
+*/
+@import "bootstrap-compass";
+@import "variables";
+@import "bootstrap";
+@import "globals";
+// page elements
+@import "wp_pages"
