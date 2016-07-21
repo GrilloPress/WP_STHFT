@@ -42,8 +42,8 @@ $brand-primary:        #18bc9c; // #337ab7
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-// $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif
-// $font-family-serif:       Georgia, "Times New Roman", Times, serif
+$font-family-sans-serif:  'Source Sans Pro', Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 // $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace
 // $font-family-base:        $font-family-sans-serif
@@ -361,7 +361,7 @@ $headings-font-weight:    700;
 //##
 
 // Basics of a navbar
-// $navbar-height:                    50px
+$navbar-height:                    40px;
 // $navbar-margin-bottom:             $line-height-computed
 $navbar-border-radius:             0;
 // $navbar-padding-horizontal:        floor(($grid-gutter-width / 2))
@@ -369,8 +369,8 @@ $navbar-border-radius:             0;
 // $navbar-collapse-max-height:       340px
 
 $navbar-default-color:             white;
-$navbar-default-bg:                transparent;
-// $navbar-default-border:            darken($navbar-default-bg, 6.5%)
+$navbar-default-bg:                $brand-primary;
+$navbar-default-border:            transparent;
 
 // Navbar links
 $navbar-default-link-color:                white;

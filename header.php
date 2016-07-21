@@ -20,7 +20,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 <?php wp_head(); ?>
   		<!-- IE8 fallback moved below head to work properly. Added respond as well. Tested to work. -->
 			<!-- media-queries.js (fallback) -->
@@ -46,8 +46,12 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <a class="navbar-brand hidden-xs" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><img class="five-sth-icons" height="30" src="<?php echo get_template_directory_uri() . "/images/proud-five-logos-white.png"; ?>"></a>
-              <img class="sth-logo pull-right" width="400" src="<?php echo get_template_directory_uri() . "/images/STHFT_white_transparent.png"; ?>">
+              <a class="navbar-brand hidden-xs" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
+                <img class="five-sth-icons" height="30" src="<?php echo get_template_directory_uri() . "/images/proud-five-logos-white.png"; ?>" alt="">
+              </a>
+              <a href="http://www.sth.nhs.uk" target="_blank" title="Sheffield Teaching Hospitals NHS Foundation Trust">
+                <img class="sth-logo pull-right" width="400" src="<?php echo get_template_directory_uri() . "/images/STHFT_white_transparent.png"; ?>">
+              </a>
             </div>
           </div>
         </div>
