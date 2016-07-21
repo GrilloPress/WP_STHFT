@@ -28,7 +28,7 @@ get_header(); ?>
 
 		  </main><!-- #main -->
       
-      <aside class="col-md-4 col-sm-4">
+      <aside class="col-md-4 col-md-offset-1 col-sm-4">
         <?php get_sidebar(); ?>
       </aside>
       

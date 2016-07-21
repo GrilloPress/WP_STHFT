@@ -37,7 +37,7 @@
 
 .entry-title {
     
-  background-color: $brand-primary;
+  background-color: desaturate($brand-primary, 5%);
   padding: 10px 5px;
   color: white;
   

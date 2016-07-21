@@ -111,9 +111,22 @@
 
 .navbar-brand {
   
-  @media screen and (max-width: 383px) {
+  @media screen and (max-width: $screen-xs) {
     
     font-size: 13px;
+    line-height: 0px;
     
   }
+}
+
+// RESPONSIVE NAVBAR LIST
+
+.navbar-nav {
+  
+  @media screen and (max-width: $screen-xs) {
+    
+    margin-left: 0px;
+    
+  }
+  
 }

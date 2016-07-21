@@ -1744,12 +1744,12 @@ textarea {
 
 /* line 48, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_scaffolding.scss */
 a {
-  color: #18bc9c;
+  color: #15a589;
   text-decoration: none;
 }
 /* line 52, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_scaffolding.scss */
 a:hover, a:focus {
-  color: #0f7864;
+  color: #0c6251;
   text-decoration: underline;
 }
 /* line 58, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_scaffolding.scss */
@@ -4748,7 +4748,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 /* line 96, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link {
-  color: #18bc9c;
+  color: #15a589;
   font-weight: normal;
   border-radius: 0;
 }
@@ -4764,7 +4764,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 /* line 115, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link:hover, .btn-link:focus {
-  color: #0f7864;
+  color: #0c6251;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -5468,7 +5468,7 @@ tbody.collapse.in {
 /* line 46, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navs.scss */
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #18bc9c;
+  border-color: #15a589;
 }
 /* line 59, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navs.scss */
 .nav .nav-divider {
@@ -6298,7 +6298,7 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #18bc9c;
+  color: #15a589;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -6321,7 +6321,7 @@ tbody.collapse.in {
 .pagination > li > span:hover,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #0f7864;
+  color: #0c6251;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -6559,7 +6559,7 @@ a.label:hover, a.label:focus {
 }
 /* line 41, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_badges.scss */
 .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-  color: #18bc9c;
+  color: #15a589;
   background-color: #fff;
 }
 /* line 47, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_badges.scss */
@@ -6665,7 +6665,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #18bc9c;
+  border-color: #15a589;
 }
 
 /* line 9, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_alerts.scss */
@@ -8829,7 +8829,7 @@ button.close {
 
 /* line 38, sass/_wp_pages.scss */
 .entry-title {
-  background-color: #18bc9c;
+  background-color: #1db799;
   padding: 10px 5px;
   color: white;
 }
@@ -8941,9 +8941,42 @@ button.close {
   padding: 22px 15px;
 }
 
-@media screen and (max-width: 383px) {
+@media screen and (max-width: 480px) {
   /* line 112, sass/_navbar.scss */
   .navbar-brand {
     font-size: 13px;
+    line-height: 0px;
   }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 124, sass/_navbar.scss */
+  .navbar-nav {
+    margin-left: 0px;
+  }
+}
+
+/* line 1, sass/_footer.scss */
+.site-footer {
+  background-color: #2da78f;
+  padding-top: 2em;
+  margin-top: 2em;
+  color: white;
+}
+/* line 9, sass/_footer.scss */
+.site-footer a {
+  color: white;
+}
+
+/* line 17, sass/_footer.scss */
+.sub-footer {
+  background-color: #389c89;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-top: 2em;
+  color: white;
+}
+/* line 26, sass/_footer.scss */
+.sub-footer a {
+  color: white;
 }
