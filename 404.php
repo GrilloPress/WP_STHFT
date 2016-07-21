@@ -8,6 +8,14 @@
 get_header(); ?>
 
 <div id="primary" class="container">
+  
+  <div class="row">
+      <div class="col-md-12">
+        <?php sth_breadcrumbs(); ?>
+      </div>
+     </div>
+  
+  
     <div class="row">
       <main id="main" class="col-md-12" role="main">
 

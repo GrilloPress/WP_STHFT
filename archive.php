@@ -10,8 +10,15 @@
 get_header(); ?>
 
 	<div id="primary" class="container">
+    
     <div class="row">
-      <main id="main" class="col-md-87col-sm-8" role="main">
+      <div class="col-md-12">
+        <?php sth_breadcrumbs(); ?>
+      </div>
+     </div>
+    
+    <div class="row">
+      <main id="main" class="col-md-7 col-sm-8" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
