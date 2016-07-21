@@ -15,14 +15,25 @@
       <div class="site-info container">
         <div class="row">
           <div id="widget-footer">
-		        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
-		        <?php endif; ?>
-		        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
-		        <?php endif; ?>
-		        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer3') ) : ?>
-		        <?php endif; ?>
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer4') ) : ?>
-		        <?php endif; ?>
+            
+            <div class="col-md-3">
+              <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
+		          <?php endif; ?>
+            </div>
+            
+            <div class="col-md-3">
+              <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
+		          <?php endif; ?>
+            </div>
+            <div class="col-md-3">
+              <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer3') ) : ?>
+		          <?php endif; ?>
+            </div>
+            <div class="col-md-3">
+              <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer4') ) : ?>
+		          <?php endif; ?>
+            </div>
+
 		      </div>
         </div>
         
