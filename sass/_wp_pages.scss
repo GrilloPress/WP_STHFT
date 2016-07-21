@@ -33,11 +33,24 @@
   
 }
 
-.navbar-brand {
-  
-  @media screen and (max-width: 383px) {
+// PAGE HEADER
+
+.entry-title {
     
-    font-size: 13px;
+  background-color: $brand-primary;
+  padding: 10px 5px;
+  color: white;
+  
+  a {
+    
+    color: white;
+    
+    &:hover {
+      
+      color: white;
+      
+    }
     
   }
+    
 }

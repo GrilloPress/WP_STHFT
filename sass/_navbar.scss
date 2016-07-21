@@ -106,3 +106,14 @@
   padding: 22px 15px;
   
 }
+
+// RESPONSIVE NAVBAR
+
+.navbar-brand {
+  
+  @media screen and (max-width: 383px) {
+    
+    font-size: 13px;
+    
+  }
+}

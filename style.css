@@ -5621,7 +5621,7 @@ tbody.collapse.in {
 /* line 11, ../../../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 40px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -5780,10 +5780,10 @@ tbody.collapse.in {
 /* line 163, ../../../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
+  padding: 10px 15px;
   font-size: 18px;
   line-height: 20px;
-  height: 50px;
+  height: 40px;
 }
 /* line 170, ../../../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-brand:hover, .navbar-brand:focus {
@@ -5806,8 +5806,8 @@ tbody.collapse.in {
   float: right;
   margin-right: 15px;
   padding: 9px 10px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -5837,7 +5837,7 @@ tbody.collapse.in {
 
 /* line 232, ../../../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin: 5px -15px;
 }
 /* line 235, ../../../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav > li > a {
@@ -5882,8 +5882,8 @@ tbody.collapse.in {
   }
   /* line 272, ../../../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -5896,8 +5896,8 @@ tbody.collapse.in {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 @media (min-width: 768px) {
   /* line 478, ../../../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_forms.scss */
@@ -6002,24 +6002,24 @@ tbody.collapse.in {
 
 /* line 343, ../../../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 /* line 346, ../../../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 /* line 349, ../../../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
-  margin-top: 14px;
-  margin-bottom: 14px;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 /* line 359, ../../../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-text {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   /* line 359, ../../../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
@@ -8827,11 +8827,19 @@ button.close {
   margin-bottom: 2em;
 }
 
-@media screen and (max-width: 383px) {
-  /* line 36, sass/_wp_pages.scss */
-  .navbar-brand {
-    font-size: 13px;
-  }
+/* line 38, sass/_wp_pages.scss */
+.entry-title {
+  background-color: #18bc9c;
+  padding: 10px 5px;
+  color: white;
+}
+/* line 44, sass/_wp_pages.scss */
+.entry-title a {
+  color: white;
+}
+/* line 48, sass/_wp_pages.scss */
+.entry-title a:hover {
+  color: white;
 }
 
 /* line 1, sass/_navbar.scss */
@@ -8931,4 +8939,11 @@ button.close {
 /* line 104, sass/_navbar.scss */
 .navbar-brand {
   padding: 22px 15px;
+}
+
+@media screen and (max-width: 383px) {
+  /* line 112, sass/_navbar.scss */
+  .navbar-brand {
+    font-size: 13px;
+  }
 }
