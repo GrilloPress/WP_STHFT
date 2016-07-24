@@ -37,17 +37,17 @@
 
 .entry-title {
     
-  background-color: desaturate($brand-primary, 5%);
+  border-bottom: solid 5px desaturate($brand-primary, 30%);
   padding: 10px 5px;
-  color: white;
+  color: $brand-primary;
   
   a {
     
-    color: white;
+    color: $brand-primary;
     
     &:hover {
       
-      color: white;
+      color: darken($brand-primary, 5%);
       
     }
     

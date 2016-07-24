@@ -8829,17 +8829,17 @@ button.close {
 
 /* line 38, sass/_wp_pages.scss */
 .entry-title {
-  background-color: #1db799;
+  border-bottom: solid 5px #389c89;
   padding: 10px 5px;
-  color: white;
+  color: #18bc9c;
 }
 /* line 44, sass/_wp_pages.scss */
 .entry-title a {
-  color: white;
+  color: #18bc9c;
 }
 /* line 48, sass/_wp_pages.scss */
 .entry-title a:hover {
-  color: white;
+  color: #15a589;
 }
 
 /* line 1, sass/_navbar.scss */
