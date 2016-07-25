@@ -8842,6 +8842,19 @@ button.close {
   color: #005e9f;
 }
 
+/* line 60, sass/_wp_pages.scss */
+.breadcrumb-container {
+  background-color: #f7f7f7;
+  margin-top: -22px;
+  padding-top: 1.5em;
+}
+
+/* line 68, sass/_wp_pages.scss */
+.breadcrumb {
+  font-weight: 700;
+  padding-left: 0;
+}
+
 /* line 1, sass/_navbar.scss */
 .navbar {
   border-radius: 0px;

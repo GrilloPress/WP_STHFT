@@ -19,7 +19,7 @@ $brand-primary:        #006db8; // #18bc9c; // #337ab7
 // $brand-info:            #5bc0de
 // $brand-warning:         #f0ad4e
 // $brand-danger:          #d9534f
-
+$brand-gray:           #f7f7f7;
 
 //== Scaffolding
 //
@@ -706,7 +706,7 @@ $jumbotron-bg:                   $brand-primary;
 //
 //##
 
-$panel-bg:                    #f7f7f7;
+$panel-bg:                    $brand-gray;
 // $panel-body-padding:          15px
 // $panel-heading-padding:       10px 15px
 // $panel-footer-padding:        $panel-heading-padding
