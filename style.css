@@ -8956,16 +8956,23 @@ button.close {
   height: inherit;
 }
 
+/* line 112, sass/_navbar.scss */
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+
 @media screen and (max-width: 480px) {
-  /* line 114, sass/_navbar.scss */
+  /* line 122, sass/_navbar.scss */
   .navbar-brand {
-    font-size: 13px;
+    font-size: 18px;
     line-height: 0px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* line 126, sass/_navbar.scss */
+  /* line 134, sass/_navbar.scss */
   .navbar-nav {
     margin-left: 0px;
   }

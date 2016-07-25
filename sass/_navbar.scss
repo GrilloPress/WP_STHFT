@@ -109,13 +109,21 @@
   
 }
 
+.navbar-toggle {
+  
+  float: left;
+  margin-left: 15px;
+  margin-right: 0px;
+  
+}
+
 // RESPONSIVE NAVBAR
 
 .navbar-brand {
   
   @media screen and (max-width: $screen-xs) {
     
-    font-size: 13px;
+    font-size: 18px;
     line-height: 0px;
     
   }
