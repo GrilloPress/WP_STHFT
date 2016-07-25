@@ -1,13 +1,19 @@
-# North of England Breech Birth Conference 2017
+# Base WordPress Theme for Sheffield Teaching Hospitals NHS Foundation Trust
 
-Things to set up:
+This is the default service theme for STHFT. It should be used as the starting point for all WordPress themes.
 
-- Sass and compass for styles
-- Eventbrite event/plugin
-- Eventbrite to Google Sheet connector
-- Add piklist theme engine
-- Update template parts structure to views folder and plugin/functions.php stuff to lib folder
+It comes with:
+
+- Bootstrap grid and styles
+- Sass for CSS
+- Breadcrumbs functionality
+- Jetpack integration (Full support coming in terms of forms)
+- Bootstrap nav walker
+
+Development of the following is also coming soon:
+
+- Colorizer for images so thumbnails are coloured according to set theme
 
 ## branding
 
-color: #18bc9c
+Pale green: #18bc9c

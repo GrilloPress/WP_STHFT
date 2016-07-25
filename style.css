@@ -8829,7 +8829,7 @@ button.close {
 
 /* line 38, sass/_wp_pages.scss */
 .entry-title {
-  border-bottom: solid 5px #389c89;
+  border-bottom: solid 5px #1db799;
   padding: 10px 5px;
   color: #18bc9c;
 }
@@ -8939,10 +8939,11 @@ button.close {
 /* line 104, sass/_navbar.scss */
 .navbar-brand {
   padding: 22px 15px;
+  height: inherit;
 }
 
 @media screen and (max-width: 480px) {
-  /* line 112, sass/_navbar.scss */
+  /* line 113, sass/_navbar.scss */
   .navbar-brand {
     font-size: 13px;
     line-height: 0px;
@@ -8950,7 +8951,7 @@ button.close {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 124, sass/_navbar.scss */
+  /* line 125, sass/_navbar.scss */
   .navbar-nav {
     margin-left: 0px;
   }
