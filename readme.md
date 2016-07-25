@@ -13,6 +13,9 @@ It comes with:
 Development of the following is also coming soon:
 
 - Colorizer for images so thumbnails are coloured according to set theme
+- SEO integration via YOAST
+- Google Analytics integration
+- 
 
 ## branding
 
