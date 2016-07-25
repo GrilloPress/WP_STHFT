@@ -104,8 +104,9 @@ add_action( 'after_setup_theme', 'sth_content_width', 0 );
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 function sth_widgets_init() {
+  
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'sth' ),
+		'name'          => esc_html__( 'Panelled Sidebar', 'sth' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<div id="%1$s" class="panel panel-primary widget %2$s">',
@@ -113,6 +114,18 @@ function sth_widgets_init() {
 		'before_title'  => '<div class="panel-heading"><h3 class="widget-title panel-title">',
 		'after_title'   => '</h3></div><div class="panel-body">',
 	) );
+  
+  register_sidebar( array(
+		'name'          => esc_html__( 'Plain Sidebar', 'sth' ),
+		'id'            => 'sidebar-2',
+		'description'   => '',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+  
+  
 }
 add_action( 'widgets_init', 'sth_widgets_init' );
 
