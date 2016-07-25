@@ -17,7 +17,7 @@ get_header(); ?>
   
   
     <div class="row">
-      <main id="main" class="col-md-12" role="main">
+      <main id="main" class="col-md-7 col-sm-8" role="main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -48,18 +48,16 @@ get_header(); ?>
 					</div><!-- .widget -->
 					<?php endif; ?>
 
-					<?php
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'sth' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
-
 					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
+      
+      <aside class="col-md-4 col-md-offset-1 col-sm-4">
+        <?php get_sidebar(); ?>
+      </aside>
   </div>
 	</div><!-- #primary -->
 
