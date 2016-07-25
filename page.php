@@ -23,7 +23,7 @@ get_header(); ?>
     <div class="row">
       <main id="main" class="col-md-7 col-sm-8" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?> 
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 

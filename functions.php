@@ -108,10 +108,10 @@ function sth_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'sth' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
+		'before_widget' => '<div id="%1$s" class="panel panel-primary widget %2$s">',
+		'after_widget'  => '</div></div>',
+		'before_title'  => '<div class="panel-heading"><h3 class="widget-title panel-title">',
+		'after_title'   => '</h3></div><div class="panel-body">',
 	) );
 }
 add_action( 'widgets_init', 'sth_widgets_init' );
@@ -183,10 +183,6 @@ function sth_register_footer() {
   */
 } // don't remove this bracket!
 add_action( 'widgets_init', 'sth_register_footer' );
-
-
-
-
 
 // enqueue javascript
 if( !function_exists( "sth_theme_js" ) ) {  
