@@ -141,6 +141,18 @@ add_action( 'wp_enqueue_scripts', 'sth_scripts' );
 
 
 
+// Update excerpt in include a link
+
+function sth_excerpt_more( $more ) {
+    return sprintf( '... <a class="read-more" href="%1$s">%2$s</a>',
+        get_permalink( get_the_ID() ),
+        __( 'Read More', 'textdomain' )
+    );
+}
+add_filter( 'excerpt_more', 'sth_excerpt_more' );
+
+
+
 
 
 // Sidebars & Widgetizes Areas
