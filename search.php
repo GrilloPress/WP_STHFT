@@ -24,9 +24,10 @@ get_header(); ?>
           <h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'sth' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
         </header><!-- .page-header -->
 
+         <div class="row">
         <?php /* Start the Loop */ ?>
         <?php while ( have_posts() ) : the_post(); ?>
-
+          
           <?php
           /**
            * Run the loop for the search to output the results.
@@ -35,16 +36,17 @@ get_header(); ?>
            */
           get_template_part( 'template-parts/content', 'search' );
           ?>
-
+         
         <?php endwhile; ?>
 
         <?php the_posts_navigation(); ?>
-
+ </div>
       <?php else : ?>
 
         <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
       <?php endif; ?>
+     
 
       </main><!-- #main-->
       <aside class="col-md-4 col-md-offset-1 col-sm-4" role="complimentry">
