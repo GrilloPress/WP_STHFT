@@ -13,13 +13,15 @@
 
 get_header(); ?>
 
+<section class="breadcrumb-container">
+  <div class="container">
+    <div class="col-md-12">
+      <?php sth_breadcrumbs(); ?>
+    </div>
+  </div>
+</section>
+
 	<div id="primary" class="container">
-    
-    <div class="row">
-      <div class="col-md-12">
-        <?php sth_breadcrumbs(); ?>
-      </div>
-     </div>
     
     <div class="row">
       <main id="main" class="col-md-7 col-sm-8" role="main">
