@@ -8870,7 +8870,7 @@ button.close {
 /* line 38, sass/_wp_pages.scss */
 .entry-title {
   border-bottom: solid 5px #056cb3;
-  padding: 10px 5px;
+  padding: 10px 0;
   color: #006db8;
 }
 /* line 44, sass/_wp_pages.scss */
@@ -8911,6 +8911,23 @@ button.close {
 /* line 91, sass/_wp_pages.scss */
 .category-article img {
   border-left: 5px solid #056cb3;
+}
+/* line 99, sass/_wp_pages.scss */
+.category-article .entry-footer {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 105, sass/_wp_pages.scss */
+.category-article .entry-footer .entry-meta {
+  font-size: 12px;
+}
+
+/* line 117, sass/_wp_pages.scss */
+.entry-footer {
+  border-top: 1px solid #eaeaea;
+  padding-top: 1em;
+  margin-top: 1em;
 }
 
 /* line 1, sass/_navbar.scss */
@@ -9194,15 +9211,8 @@ a img.aligncenter {
   margin-top: 2.5em;
 }
 
-/* line 1, sass/_search.scss */
-.search-result-title {
-  border-top: 5px solid #006db8;
-  padding-top: 20px;
-}
-
-/* line 8, sass/_search.scss */
+/* line 6, sass/_search.scss */
 .sthft-search-result {
-  margin-bottom: 1em;
   padding: 5px;
 }
 

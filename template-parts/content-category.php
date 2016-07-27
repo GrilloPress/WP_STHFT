@@ -22,8 +22,6 @@
   
   <div class="col-md-8 col-sm-8">
     <header class="entry-header">
-        
-        
         <?php the_title( sprintf( '<h2 class="category-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
       </header><!-- .entry-header -->
     
@@ -32,7 +30,9 @@
       </div><!-- .entry-summary -->
 
       <footer class="entry-footer">
-        <?php sth_entry_footer(); ?>
+        <div class="entry-meta">
+			    <?php sth_posted_on(); ?>
+		    </div><!-- .entry-meta -->
       </footer><!-- .entry-footer -->
   </div>
     

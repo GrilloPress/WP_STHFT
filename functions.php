@@ -141,7 +141,7 @@ add_action( 'wp_enqueue_scripts', 'sth_scripts' );
 
 
 
-// Update excerpt in include a link
+// Update excerpt to include a link
 
 function sth_excerpt_more( $more ) {
     return sprintf( '... <a class="read-more" href="%1$s">%2$s</a>',

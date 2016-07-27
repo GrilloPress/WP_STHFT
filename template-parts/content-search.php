@@ -9,10 +9,9 @@
 
 ?>
 
-<div class="col-md-6">
   <article id="post-<?php the_ID(); ?>" <?php post_class('sthft-search-result'); ?>>
     <header class="entry-header">
-      <?php the_title( sprintf( '<h2 class="search-result-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+      <?php the_title( sprintf( '<h3 class="search-result-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
       <?php if ( 'post' == get_post_type() ) : ?>
       <div class="entry-meta">
@@ -25,8 +24,7 @@
       <?php the_excerpt(); ?>
     </div><!-- .entry-summary -->
 
-    <footer class="entry-footer">
+    <footer>
       <?php sth_entry_footer(); ?>
     </footer><!-- .entry-footer -->
   </article><!-- #post-## -->
-</div>

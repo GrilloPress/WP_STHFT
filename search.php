@@ -25,8 +25,6 @@ get_header(); ?>
         <header class="page-header">
           <h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'sth' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
         </header><!-- .page-header -->
-
-         <div class="row">
         <?php /* Start the Loop */ ?>
         <?php while ( have_posts() ) : the_post(); ?>
           
@@ -42,7 +40,7 @@ get_header(); ?>
         <?php endwhile; ?>
 
         <?php the_posts_navigation(); ?>
- </div>
+
       <?php else : ?>
 
         <?php get_template_part( 'template-parts/content', 'none' ); ?>
