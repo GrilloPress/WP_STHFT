@@ -12,7 +12,8 @@ get_header(); ?>
 <section class="breadcrumb-container">
   <div class="container">
     <div class="col-md-12">
-      <?php sth_breadcrumbs(); ?>
+      <?php // sth_breadcrumbs(); ?>
+      <ul id="breadcrumbs" class="breadcrumb"><li class="item-home"><a class="bread-link bread-home" href="<?php echo home_url(); ?>" title="Home">Home</a></li><li class="separator separator-home"> &gt; </li><li class="item-current item-19"><span class="bread-current bread-19"> Archive</span></li></ul>
     </div>
   </div>
 </section>

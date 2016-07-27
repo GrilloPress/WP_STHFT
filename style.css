@@ -8895,6 +8895,24 @@ button.close {
   padding-left: 0;
 }
 
+/* line 77, sass/_wp_pages.scss */
+.category-title {
+  padding-top: 20px;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+/* line 85, sass/_wp_pages.scss */
+.category-article {
+  margin: 1em 0;
+  border: 1px solid #eaeaea;
+  padding-right: 5px;
+}
+/* line 91, sass/_wp_pages.scss */
+.category-article img {
+  border-left: 5px solid #056cb3;
+}
+
 /* line 1, sass/_navbar.scss */
 .navbar {
   border-radius: 0px;
@@ -9163,6 +9181,12 @@ a img.aligncenter {
   width: auto;
   z-index: 100000;
   /* Above WP toolbar. */
+}
+
+/* line 111, sass/_images.scss */
+.img-full {
+  width: 100%;
+  height: auto;
 }
 
 /* line 1, sass/_sidebar.scss */

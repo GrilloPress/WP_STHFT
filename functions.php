@@ -151,7 +151,16 @@ function sth_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'sth_excerpt_more' );
 
-
+/**
+ * Filter the except length to 20 characters.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function sth_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'sth_custom_excerpt_length', 999 );
 
 
 
