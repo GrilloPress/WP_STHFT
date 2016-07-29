@@ -9128,7 +9128,7 @@ a img.aligncenter {
 
 /* line 46, sass/_images.scss */
 .wp-caption {
-  background: #fff;
+  background: #f7f7f7;
   border: 1px solid #f0f0f0;
   max-width: 96%;
   /* Image does not overflow the content area */
@@ -9156,7 +9156,7 @@ a img.aligncenter {
   border: 0 none;
   height: auto;
   margin: 0;
-  max-width: 98.5%;
+  max-width: 100%;
   padding: 0;
   width: auto;
 }
