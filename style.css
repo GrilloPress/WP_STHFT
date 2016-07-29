@@ -9053,6 +9053,40 @@ button.close {
   }
 }
 
+/* line 151, sass/_navbar.scss */
+nav.navigation .nav-links {
+  padding-left: 0;
+  margin: 22px 0;
+  list-style: none;
+  text-align: center;
+}
+/* line 160, sass/_navbar.scss */
+nav.navigation .nav-previous {
+  display: inline;
+}
+/* line 164, sass/_navbar.scss */
+nav.navigation .nav-previous a {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  float: left;
+}
+/* line 177, sass/_navbar.scss */
+nav.navigation .nav-next {
+  display: inline;
+}
+/* line 181, sass/_navbar.scss */
+nav.navigation .nav-next a {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  float: right;
+}
+
 /* line 1, sass/_footer.scss */
 .site-footer {
   background-color: #126aa6;

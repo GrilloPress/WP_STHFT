@@ -43,8 +43,10 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-        
-			<?php the_posts_navigation(); ?>
+          <?php the_posts_navigation(array(
+                'prev_text' => __( '&larr; Older posts', 'textdomain' ),
+                'next_text' => __( 'Newer posts &rarr;', 'textdomain' ),
+                )); ?>
 
 		<?php else : ?>
 

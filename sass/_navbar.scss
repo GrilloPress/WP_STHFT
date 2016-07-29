@@ -140,3 +140,55 @@
   }
   
 }
+
+//
+//
+//
+//
+
+nav.navigation {
+  
+  .nav-links {
+      
+    padding-left: 0;
+    margin: 22px 0;
+    list-style: none;
+    text-align: center;
+    
+  }
+  
+  .nav-previous {
+    
+    display: inline;
+    
+    a {
+      
+      display: inline-block;
+      padding: 5px 14px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 15px;
+      float: left;
+      
+    }
+    
+  }
+  
+  .nav-next {
+    
+    display: inline;
+    
+    a {
+      
+      display: inline-block;
+      padding: 5px 14px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 15px;
+      float: right;
+      
+    }
+    
+  }
+  
+}

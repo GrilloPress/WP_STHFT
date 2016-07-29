@@ -39,7 +39,10 @@ get_header(); ?>
          
         <?php endwhile; ?>
 
-        <?php the_posts_navigation(); ?>
+         <?php the_posts_navigation(array(
+                'prev_text' => __( 'Further results', 'textdomain' ),
+                'next_text' => __( 'Previous results', 'textdomain' ),
+                )); ?>
 
       <?php else : ?>
 

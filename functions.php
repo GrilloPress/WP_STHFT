@@ -140,6 +140,29 @@ function sth_scripts() {
 add_action( 'wp_enqueue_scripts', 'sth_scripts' );
 
 
+// /////////////////////////////////
+//
+// Pagnation styles
+//
+// /////////////////////////////////
+
+function next_posts_link_css ( $content ) {
+    return 'class="next"';
+}
+add_filter( 'next_posts_link_attributes', 'next_posts_link_css' );
+
+function previous_posts_link_css ( $content ) {
+    return 'class="prev"';
+}
+add_filter( 'previous_posts_link_attributes', 'previous_posts_link_css' );
+
+
+// /////////////////////////////////
+//
+// Excerpt styles
+//
+// /////////////////////////////////
+
 
 // Update excerpt to include a link
 
@@ -161,6 +184,15 @@ function sth_custom_excerpt_length( $length ) {
     return 20;
 }
 add_filter( 'excerpt_length', 'sth_custom_excerpt_length', 999 );
+
+
+
+
+
+
+
+
+
 
 
 
