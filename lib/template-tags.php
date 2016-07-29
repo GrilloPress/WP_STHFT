@@ -26,11 +26,11 @@ function sth_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'sth' ),
+		// esc_html_x( 'Posted on: %s', 'post date', 'sth' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
-	echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
+	echo '<span class="posted-on"><strong>Posted on:</strong> ' . $posted_on . '</span>'; // WPCS: XSS OK.
 
 }
 endif;
@@ -45,14 +45,16 @@ function sth_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'sth' ) );
 		if ( $categories_list && sth_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'sth' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s ', 'sth' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
+    // Prints out tags within a div, each tag is in a tag list span
 		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'sth' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'sth' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<div class="tags-links">' . '<strong>Tagged:</strong>' . '<span class="tag-list">' . esc_html__( ' %1$s ', 'sth' ) . '</span>' . '</div>', $tags_list ); // WPCS: XSS OK.
 		}
+    
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
@@ -61,7 +63,7 @@ function sth_entry_footer() {
 		echo '</span>';
 	}
 
-	edit_post_link( esc_html__( 'Edit', 'sth' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( esc_html__( 'Edit ', 'sth' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 
