@@ -318,3 +318,8 @@ require get_template_directory() . '/lib/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/lib/jetpack.php';
+
+/**
+ * Load Jetpack compatibility file.
+ */
+require get_template_directory() . '/lib/sth_categories_to_pages.php';
