@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying the front page
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -18,7 +18,7 @@ get_header(); ?>
 
 	 <div id="primary" class="container">
     <div class="row">
-      <main id="main" class="col-md-7 col-sm-8" role="main">
+      <main id="main" class="col-md-12" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -27,10 +27,6 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		  </main><!-- #main -->
-      
-      <aside class="col-md-4 col-md-offset-1 col-sm-4">
-        <?php get_sidebar(); ?>
-      </aside>
       
 	  </div><!-- #primary -->
   </div>

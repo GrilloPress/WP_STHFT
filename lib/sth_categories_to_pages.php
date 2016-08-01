@@ -2,7 +2,7 @@
 /**
  * add taxonomies/categories to pages function. 
  * 
- * http://spicemailer.com/wordpress/add-categories-tags-pages-wordpress/
+ * based on: http://spicemailer.com/wordpress/add-categories-tags-pages-wordpress/
  * 
  * 
  * @package sth
