@@ -271,6 +271,7 @@ if( !function_exists( "sth_theme_js" ) ) {
       get_template_directory_uri() . '/js/modernizr.js', 
       array('jquery'), 
       '1.2' );
+
   
     wp_enqueue_script( 'bootstrap' );
     wp_enqueue_script( 'app-js' );
