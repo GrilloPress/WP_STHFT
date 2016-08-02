@@ -317,6 +317,7 @@ require get_template_directory() . '/lib/sth_breadcrumbs.php';
  * Bootstrap Walker and Nav Customization 
  */
 require get_template_directory() . '/lib/bootstrap_nav.php';
+require get_template_directory() . '/lib/shortcodes.php';
 
 /**
  * Custom functions that act independently of the theme templates.
