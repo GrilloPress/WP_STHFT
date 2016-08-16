@@ -20,7 +20,7 @@ get_header(); ?>
   </div>
 </section>
 
-	 <div id="primary" class="container">
+<div id="primary" class="container">
      
     <div class="row">
       <main id="main" class="col-md-7 col-sm-8" role="main">
@@ -28,6 +28,22 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?> 
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+        
+        <div class="page-service-marketing-columns">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="page-service-marketing-left">
+                <?php echo CFS()->get('marketing_section_left'); ?>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="page-service-marketing-right">
+                <?php echo CFS()->get('marketing_section_right'); ?>
+              </div>
+            </div>
+          </div>
+        </div>
 
 			<?php endwhile; // End of the loop. ?>
 
