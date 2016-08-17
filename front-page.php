@@ -13,7 +13,6 @@
  * 
  * 
  */
-
 get_header(); ?>
 
 <section class="jumbotron" style="background-image: url('<?php echo CFS()->get( 'jumbotron_img' );?>')">
@@ -53,7 +52,7 @@ get_header(); ?>
 
           <?php $fb_link = CFS()->get( 'feature_link_' . $fp );?>
           <p>
-            <a class="btn btn-success" href="<?php echo $fb_link["url"];?>" title="<?php echo $fb_link["text"];?>" target="<?php echo $fb_link["target"];?>" role="button"><?php echo $fb_link["text"];?></a>
+            <a class="btn btn-primary" href="<?php echo $fb_link["url"];?>" title="<?php echo $fb_link["text"];?>" target="<?php echo $fb_link["target"];?>" role="button"><?php echo $fb_link["text"];?></a>
           </p>
           
         </div>
@@ -68,25 +67,20 @@ get_header(); ?>
   <div class="container">
     <div class="row">
       
+      <h2></h2>
+      
       <?php
       $marketing_blocks = array("one", "two", "three", "four");
       foreach ($marketing_blocks as $mb) { ;?>
       
       <div class="col-md-3 col-sm-6">
-        <div class="media">
-          
-          <div class="media-left">
               
             <?php $marketing_image_id = CFS()->get( 'marketing_image_' . $mb );
             echo wp_get_attachment_image( $marketing_image_id, array('84', '84'), "", array( "class" => "img-marketing" ) );?>
             
-          </div>
-          
-          <div class="media-body">
             <h4 class="media-heading"><?php echo CFS()->get('marketing_title_' . $mb); ?></h4>
             <?php echo CFS()->get('marketing_body_' . $mb); ?>
-          </div>
-        </div>
+
       </div>
       
       <?php } reset($marketing_blocks);?>
@@ -98,20 +92,14 @@ get_header(); ?>
       foreach ($marketing_blocks as $mb) { ;?>
       
       <div class="col-md-3 col-sm-6">
-        <div class="media">
-          
-          <div class="media-left">
-              
+
+
             <?php $marketing_image_id = CFS()->get( 'marketing_image_' . $mb );
             echo wp_get_attachment_image( $marketing_image_id, array('84', '84'), "", array( "class" => "img-marketing" ) );?>
-            
-          </div>
-          
-          <div class="media-body">
+        
             <h4 class="media-heading"><?php echo CFS()->get('marketing_title_' . $mb); ?></h4>
             <?php echo CFS()->get('marketing_body_' . $mb); ?>
-          </div>
-        </div>
+
       </div>
       <?php } reset($marketing_blocks);?>
     </div>
@@ -121,12 +109,13 @@ get_header(); ?>
 <section id="primary" class="page-service-marketing-container">
   <div class="container">
     <div class="row">
-      <main id="main" class="col-md-7 col-sm-8" role="main">
+      <main id="main" class="col-md-12" role="main">
 
         <?php while ( have_posts() ) : the_post(); ?>
 
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <header class="entry-header">
+              
             </header><!-- .entry-header -->
 
             <div class="entry-content">
@@ -163,10 +152,6 @@ get_header(); ?>
         </div>
         
         </main><!-- #main -->
-      
-      <aside class="col-md-4 col-md-offset-1 col-sm-4">
-        <?php get_sidebar(); ?>
-      </aside>
 
     </div><!-- #primary -->
     
