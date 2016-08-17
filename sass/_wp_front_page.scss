@@ -1,7 +1,9 @@
 .jumbotron {
   
   margin-top: -2em;
-  background-position: 32%;
+  background-repeat: no-repeat;
+  background-position: 32% 0%;
+  background-size: cover;
   
   @media screen and (min-width: $screen-sm-min){
     
