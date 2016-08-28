@@ -30,7 +30,6 @@ section.gray {
   h3 {
     
     color: $brand-warning;
-    font-family: $font-family-serif;
     font-size: $font-size-h4;
     
     a {
@@ -58,6 +57,9 @@ section.gray {
 }
 
 .page-category-post-list {
+  
+  margin-top: 2em;
+  margin-bottom: 2em;
   
   .btn-wire {
     
