@@ -11,6 +11,7 @@ function wp_bootstrap_main_nav() {
     array( 
       'menu' => 'main_nav', /* menu name */
       'menu_class' => 'nav navbar-nav',
+      'depth'      => 2,
       'theme_location' => 'main_nav', /* where in the theme it's assigned */
       'container' => 'false', /* container class */
       'fallback_cb' => 'wp_bootstrap_main_nav_fallback', /* menu fallback */

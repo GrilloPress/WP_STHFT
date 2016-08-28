@@ -116,6 +116,137 @@ get_header(); ?>
   </div>
 </section>
 
+<section class="page-category-post-list">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-6">
+        <?php 
+        // News post item category
+        
+        // WP_Query arguments
+        $left_col_args = array (
+          
+          'category_name' => 'news',
+          'posts_per_page' => 3
+          
+        );
+   
+        // the query
+        $cat_query_left = new WP_Query( $left_col_args ); ?>
+
+        <?php if ( $cat_query_left->have_posts() ) : ?>
+
+          <!-- the loop -->
+          <?php while ( $cat_query_left->have_posts() ) : $cat_query_left->the_post(); ?>
+          <div class="row">
+            
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <?php if ( has_post_thumbnail() ) :?>
+                <a href="<?php the_permalink() ;?>">
+                  <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive img-full')); ?>
+                </a>
+              <?php else :?>
+                <a href="<?php the_permalink() ;?>">
+                  <img class="img-responsive img-full" src="<?php echo get_template_directory_uri() . "/images/news-square.jpg"; ?>" alt="News">
+                </a>
+              <?php endif ;?>
+            </div>
+            
+            <div class="col-md-8">
+              <?php the_title( sprintf( '<h3 class="category-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+              <?php the_excerpt(); ?>
+            </div>
+            
+          </div>
+          <?php endwhile; ?>
+          <!-- end of the loop -->
+
+          <?php wp_reset_postdata(); ?>
+        
+        <?php
+          $category_id = get_cat_ID( 'news' );
+          $category_link = get_category_link( $category_id );
+        ?>
+        
+        <a class="btn btn-block btn-wire" href="<?php echo esc_url( $category_link ); ?>" title="News Category">Read more ...</a>
+
+        
+        <?php else : ?>
+          <p><?php _e( 'Please write a post...' ); ?></p>
+        <?php endif; ?>
+        
+      </div>
+      
+      <div class="col-md-6">
+        <?php 
+        // Right hand column that takes user submitted category to fill the front page feed
+        // 
+        // If no category is provided this posts everything that is a post...
+        $user_submitted_category = CFS()->get( 'right_column_category' );
+        $cleaned_user_submitted_category = strtolower( $user_submitted_category );
+        $cleaned_user_submitted_category = str_replace(' ', '-', $cleaned_user_submitted_category );
+        
+
+        // WP_Query arguments
+        $right_col_args = array (
+          
+          'category_name' => $user_submitted_category,
+          'posts_per_page' => 3
+          
+        );
+   
+        // the query
+        $cat_query_right = new WP_Query( $right_col_args ); ?>
+
+        <?php if ( $cat_query_right->have_posts() ) : ?>
+
+          <!-- the loop -->
+          <?php while ( $cat_query_right->have_posts() ) : $cat_query_right->the_post(); ?>
+          <div class="row">
+            
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <?php if ( has_post_thumbnail() ) :?>
+                <a href="<?php the_permalink() ;?>">
+                  <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive img-full')); ?>
+                </a>
+              <?php else :?>
+                <a href="<?php the_permalink() ;?>">
+                  <img class="img-responsive img-full" src="<?php echo get_template_directory_uri() . "/images/news-square.jpg"; ?>" alt="News">
+                </a>
+              <?php endif ;?>
+            </div>
+            
+            <div class="col-md-8">
+              <?php the_title( sprintf( '<h3 class="category-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+              <?php the_excerpt(); ?>
+            </div>
+            
+          </div>
+          <?php endwhile; ?>
+          <!-- end of the loop -->
+
+          <?php wp_reset_postdata(); ?>
+        
+         <?php
+          $category_id = get_cat_ID( $user_submitted_category );
+          $category_link = get_category_link( $category_id );
+        ?>
+
+        <a role="button" class="btn btn-block btn-wire" href="<?php echo esc_url( $category_link ); ?>" title="<?php echo $user_submitted_category;?> Category">Read more ...</a>
+
+
+        <?php else : ?>
+          <p><?php _e( 'Please write a post...' ); ?></p>
+        <?php endif; ?>
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
 <section class="page-marketing-four-columns-container">
   <div class="container">
     <div class="row">
